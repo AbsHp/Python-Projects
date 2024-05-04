@@ -16,15 +16,9 @@ def validate_time(alarm_time):
         else:
             return "ok"
 
-while True:
-    alarm_time = input("Enter time in 'HH:MM:SS AM/PM' format: ")
+print("Alarm Set!")
 
-    validate = validate_time(alarm_time.lower())
-    if validate != "ok":
-        print(validate)
-    else:
-        print(f"Setting alarm for {alarm_time}...")
-        break
+while True:
 
     alarm_hour = alarm_time[0:2]
     alarm_min = alarm_time[3:5]
@@ -38,10 +32,7 @@ while True:
     current_sec = now.strftime("%S")
     current_period = now.strftime("%p")
 
-    if alarm_period == current_period:
-        if alarm_hour == current_hour:
-            if alarm_min == current_min:
-                if alarm_sec == current_sec:
-                    print("WAKE UP !!")
-                    playsound("E:\H Drive (Re-Creational and Extras)\Programming and related\Python-Projects\Alec Benjamin - Let me down slowly ( lyrics ). (320 kbps).wav")
-                    break
+    if(alarm_period == current_period and alarm_hour == current_hour and alarm_min == current_min and alarm_sec == current_sec):
+        print("Wake Up!")
+        playsound("E:\H Drive (Re-Creational and Extras)\Programming and related\Python-Projects\Alec Benjamin - Let me down slowly ( lyrics ). (320 kbps).wav")
+        break
