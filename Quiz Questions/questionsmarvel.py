@@ -1,10 +1,10 @@
 quiz = {
     1 : {
-        "question" : "Who is Iron Man?"
+        "question" : "Who is Iron Man?",
         "answer" : "Tony Stark"
     },
     2 : {
-        "question" : "Who is the god of lightning in Avengers?"
+        "question" : "Who is the god of lightning in Avengers?",
         "answer" : "Thor"
     },
     3 : {
@@ -12,11 +12,11 @@ quiz = {
         "answer" : "Captain America"
     },
     4 : {
-        "question" : "Which avenger is green in color?",
+        "question" : "Which Avenger is green in color?",
         "answer" : "Hulk"
     },
     5 : {
-        "question" : "Which avenger can change it's size?",
+        "question" : "Which Avenger can change it's size?",
         "answer" : "AntMan"
     },
     6 : {
